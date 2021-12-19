@@ -1,4 +1,4 @@
-# URL Shortenner (Enhanced) in GO
+# URL Shortenner with Redis implemented in GO
 
 * Ref: https://www.educative.io/courses/the-way-to-go
 * IaC (terraform) taken from https://github.com/KevinSeghetti/aws-terraform-ecs 
@@ -6,7 +6,7 @@
 ## How to Use Locally
 * Clone this repo
 * go to the `app` directory
-* Assuming you have Go installed, do `go mod init main` from the root directory of this repo
+* Assuming you have Go, and Redis server installed, do `go mod init main` from the root directory of this repo
 * Run the app using `go run .`
 * Open your browser, and go to `localhost:4000/add`
 * Type `https://go.dev/tour` in the form and hit enter
@@ -15,6 +15,7 @@
 
 
 ## Deploying to AWS ECS using Terraform
+* NOTE: Redis-Server installation is not added in the Dockerfile
 * Clone this repo
 * Go to the `infrastructure` directory
 * Assuming you have terraform installed and have aws credentials setup, run the following: 
