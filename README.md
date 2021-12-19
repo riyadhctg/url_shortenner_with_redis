@@ -15,7 +15,7 @@
 
 
 ## Deploying to AWS ECS using Terraform
-* NOTE: Redis-Server installation is not added in the Dockerfile
+* 🚨 NOTE: Redis-Server installation is not added in the Dockerfile, and needs to be addresed for the app to work properly inside container
 * Clone this repo
 * Go to the `infrastructure` directory
 * Assuming you have terraform installed and have aws credentials setup, run the following: 
