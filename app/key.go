@@ -26,7 +26,8 @@ var charSlice = []byte("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123
 func genKey() string {
 	s := make([]byte, 10)
 	for i := range s {
-		s[i] = charSlice[rand.Intn(len(charSlice))]
+		RandomIntegerwithinRange := rand.Intn((len(charSlice)-1)-0) + 0
+		s[i] = charSlice[RandomIntegerwithinRange]
 	}
 	return string(s)
 }
